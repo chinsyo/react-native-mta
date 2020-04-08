@@ -19,8 +19,8 @@ RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnu
 
 RCT_EXPORT_METHOD(startWithAppKey:(NSString *)key debug:(BOOL)debug) {
     
-    [MTAConfig getInstance].debugEnabled = debug;
-    [MTA startWithAppKey:key];
+    [MTAConfig getInstance].debugEnable = debug;
+    [MTA startWithAppkey:key];
 }
 
 RCT_EXPORT_METHOD(trackPageViewBegin:(NSString *)page) {
