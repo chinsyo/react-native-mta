@@ -1,5 +1,6 @@
 import { NativeModules } from 'react-native';
 
-const { RCTMta } = NativeModules;
+const { Mta } = NativeModules;
+console.log("!!!RCTMta", Mta)
 
-export default RTCMta;
+export default Mta;
