@@ -1,7 +1,7 @@
 {
   "name": "react-native-mta",
   "title": "React Native Mta",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "react native mta",
   "main": "index.js",
   "scripts": {
