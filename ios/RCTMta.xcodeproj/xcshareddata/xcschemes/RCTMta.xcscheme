@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-               BuildableName = "libRTCMta.a"
+               BuildableName = "libRCTMta.a"
                BlueprintName = "RCTMta"
                ReferencedContainer = "container:RCTMta.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-            BuildableName = "libRTCMta.a"
+            BuildableName = "libRCTMta.a"
             BlueprintName = "RCTMta"
             ReferencedContainer = "container:RCTMta.xcodeproj">
          </BuildableReference>

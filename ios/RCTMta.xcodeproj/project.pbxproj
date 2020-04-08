@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29A1D1D5243E0B0200A35C22 /* libmtasdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A1D1D1243E0B0200A35C22 /* libmtasdk.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RCTMta.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RCTMta.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRCTMta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTMta.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A1D1D1243E0B0200A35C22 /* libmtasdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmtasdk.a; sourceTree = "<group>"; };
+		29A1D1D2243E0B0200A35C22 /* MTAConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAConfig.h; sourceTree = "<group>"; };
+		29A1D1D3243E0B0200A35C22 /* MTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTA.h; sourceTree = "<group>"; };
+		29A1D1D4243E0B0200A35C22 /* MTA+Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTA+Account.h"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RCTMta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMta.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RCTMta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A1D1D5243E0B0200A35C22 /* libmtasdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,9 +53,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		29A1D1D0243E098700A35C22 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				29A1D1D1243E0B0200A35C22 /* libmtasdk.a */,
+				29A1D1D3243E0B0200A35C22 /* MTA.h */,
+				29A1D1D4243E0B0200A35C22 /* MTA+Account.h */,
+				29A1D1D2243E0B0200A35C22 /* MTAConfig.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		29C32C97243DA501004D5AF1 /* RCTMta */ = {
 			isa = PBXGroup;
 			children = (
+				29A1D1D0243E098700A35C22 /* lib */,
 				B3E7B5881CC2AC0600A0062D /* RCTMta.h */,
 				B3E7B5891CC2AC0600A0062D /* RCTMta.m */,
 			);
@@ -230,7 +248,10 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTMta/lib",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTMta;
 				SKIP_INSTALL = YES;
@@ -246,7 +267,10 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTMta/lib",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTMta;
 				SKIP_INSTALL = YES;

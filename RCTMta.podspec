@@ -13,7 +13,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/chinsyo/react-native-mta.git", :tag => "v#{s.version}" }
   s.source_files = "ios/**/*.{h,m}"
   s.requires_arc = true
-
+  s.vendered_library = "ios/**/*.a"
+  s.libraries = "z", "sqlite3"
+  s.frameworks = "CFNetwork", "SystemConfiguration", "CoreTelephony"
   s.dependency "React"
 end
 
