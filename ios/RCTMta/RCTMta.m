@@ -1,7 +1,7 @@
-#import "RTCMta.h"
+#import "RCTMta.h"
 
 
-@implementation RTCMta
+@implementation RCTMta
 
 RCT_EXPORT_MODULE()
 

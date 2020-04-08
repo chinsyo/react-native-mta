@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native';
 
-const { RTCMta } = NativeModules;
+const { RCTMta } = NativeModules;
 
 export default RTCMta;
